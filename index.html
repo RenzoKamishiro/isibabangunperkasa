@@ -168,6 +168,7 @@ nav.primary-nav a{
   transition:color .25s ease,border-color .25s ease;
 }
 nav.primary-nav a:hover,nav.primary-nav a:focus-visible,nav.primary-nav a.active{color:var(--ink);border-bottom-color:var(--leaf);}
+nav.primary-nav a:focus-visible{outline:none;}
 .header-actions{display:flex;align-items:center;gap:14px;}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -293,6 +294,10 @@ section{padding:clamp(56px,9vw,104px) 0;}
 /* scroll-reveal — only engaged when JS confirms motion is allowed */
 .js-anim .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1);}
 .js-anim .reveal.run{opacity:1;transform:none;}
+.js-anim .service-card.reveal,.js-anim .adv-card.reveal{transition:opacity .5s cubic-bezier(.16,.84,.44,1),transform .4s cubic-bezier(.16,.84,.44,1),box-shadow .4s ease,border-color .4s ease;}
+.js-anim .folio-card.reveal{transition:opacity .5s cubic-bezier(.16,.84,.44,1),transform .4s cubic-bezier(.16,.84,.44,1),box-shadow .4s ease;}
+.js-anim .btn.reveal{transition:opacity .5s cubic-bezier(.16,.84,.44,1),transform .25s cubic-bezier(.16,.84,.44,1),filter .25s ease,border-color .25s ease;}
+.js-anim .value-item.reveal{transition:opacity .5s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1),background .3s ease;}
 .value-grid .value-item:nth-child(2),
 .services-grid .service-card:nth-child(2),
 .adv-grid .adv-card:nth-child(2),
